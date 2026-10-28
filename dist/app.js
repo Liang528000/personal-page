@@ -5,7 +5,7 @@ function setLanguage(chinese) {
   languageButton.textContent = chinese ? 'EN' : '中文';
 }
 try {
-  setLanguage(localStorage.getItem('site-lang') === 'zh');
+  setLanguage(sessionStorage.getItem('site-lang') === 'zh');
 } catch {
   setLanguage(false);
 }
@@ -13,7 +13,7 @@ languageButton.addEventListener('click', () => {
   const chinese = document.documentElement.dataset.lang !== 'zh';
   setLanguage(chinese);
   try {
-    localStorage.setItem('site-lang', chinese ? 'zh' : 'en');
+    sessionStorage.setItem('site-lang', chinese ? 'zh' : 'en');
   } catch {
     // The current page remains usable when storage is unavailable.
   }
