@@ -37,6 +37,8 @@ p { line-height: 1.75; }
 .section-title a { font-size: 13px; white-space: nowrap; }
 .highlight-grid { display: grid; gap: 28px; }
 .highlight { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); align-items: center; gap: 24px; }
+.highlight-manuscript { display: block; border-left: 3px solid #b16b4b; padding: 2px 0 2px 18px; }
+.highlight-manuscript > div { max-width: 680px; }
 .figure { height: 300px; border: 1px solid #e5e9e9; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .figure img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
 .highlight-meta { display: block; color: #9b6a54; font-size: 10px; font-weight: 700; line-height: 1.5; }
